@@ -1,31 +1,38 @@
-# Basic Sample Hardhat Project
+# CrowdTank Smart Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+A crowdfunding smart contract built using Solidity and Hardhat.
 
+## Features Implemented
 
-For installing dependencies
-```shell
+* Track total projects created
+* Prevent over-funding and refund extra funds
+* Funding percentage calculation
+* Admin management
+* Add and remove project creators
+* Restrict project creation to approved creators
+* User withdrawal before project deadline
+* Track successful funded projects
+* Track failed projects
+* Prevent duplicate failed project counting
+
+## Tech Stack
+
+* Solidity
+* Hardhat
+* JavaScript
+* Ethereum
+
+## Commands
+
+```bash
 npm install
-```
-Try running some of the following tasks:
-```shell
-npx hardhat accounts
 npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
 ```
-For running script
-```shell
-npx hardhat run scripts/deploy-crowdToken.js --network sepolia
-npx hardhat run scripts/createProject --network sepolia
-```
-Important Links:
-sepolia faucet - https://www.alchemy.com/faucets/ethereum-sepolia
 
-etherscan - https://etherscan.io/myapikey
+## Repository
+
+CrowdTank crowdfunding smart contract internship project.
+
 
 solidity documentation - https://docs.soliditylang.org/en/v0.8.25/
 
